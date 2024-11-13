@@ -20,6 +20,16 @@ body{
     display: flex;
 }
 
+h2.title{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.title span{
+    color: #6f5fc7;
+}
+
 /* Estilo do Header */
 header{
     padding: 40px 4%;
@@ -92,4 +102,50 @@ section.topo-site .flex{
 .topo-site .txt-top p{
     color: #fff;
     margin: 40px 0;
+}
+
+.topo-site .img-top img{
+    position: relative;
+    animation: img-flutuante 2s ease-in-out infinite alternate;
+}
+
+@keyframes img-flutuante{
+    0% {
+        top: 0;
+    }
+
+    100%{
+        top: 30px;
+    }
+}
+
+/* Formação Estilo */
+section.formacao{
+    padding: 40px 4%;
+}
+
+section.formacao .flex{
+    display: flex;
+    justify-content: center;   /* Centraliza as caixas horizontal */
+    align-items: center;       /* Centraliza as caixas verticalmente*/
+    gap: 60px;                 /* Espaço entre as caixas */
+    flex-wrap: wrap;           /* Faz as caixas se ajustarem em telas menores */
+    text-align: center;        /* Centraliza o conteúdo dentro das boxes */
+}
+
+.formacao .formacao-box{
+    color: #fff;
+    padding: 40px;
+    border: 2px solid #fff;  
+    margin-top: 35px;
+}
+
+.formacao .formacao-box i{
+    font-size: 60px;
+    color: #6f5fc7;
+}
+
+.formacao .formacao-box h3{
+    font-size: 30px;
+    margin: 20px 0;
 }
