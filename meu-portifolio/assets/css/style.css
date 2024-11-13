@@ -16,6 +16,10 @@ body{
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
+
 /* Estilo do Header */
 header{
     padding: 40px 4%;
@@ -51,7 +55,7 @@ header .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #C8C4DF;
+    background-color: #8e82cd;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -59,5 +63,33 @@ header .btn-contato button{
 }
 
 header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #9895a9;
+    box-shadow: 0px 0px 8px #6f5fc7;
+}
+
+/* Estilo do Todo */
+
+section.topo-site{
+    padding: 40px 4%;
+}
+
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-site h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 38px;
+}
+
+.topo-site .txt-top h1 span{
+    color: #6f5fc7;
+    font-size: 50px;
+}
+
+.topo-site .txt-top p{
+    color: #fff;
+    margin: 40px 0;
 }
