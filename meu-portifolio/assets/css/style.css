@@ -135,9 +135,15 @@ section.formacao .flex{
 
 .formacao .formacao-box{
     color: #fff;
-    padding: 40px;
-    border: 2px solid #fff;  
+    padding: 40px;  
     margin-top: 35px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.formacao .formacao-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #7d8dbe;
 }
 
 .formacao .formacao-box i{
@@ -149,3 +155,19 @@ section.formacao .flex{
     font-size: 30px;
     margin: 20px 0;
 }
+
+/* Sobre Estilo */
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
