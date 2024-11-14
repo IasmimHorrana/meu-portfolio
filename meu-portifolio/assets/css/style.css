@@ -171,3 +171,18 @@ section.sobre .flex{
     color: #fff;
 }
 
+.sobre .txt-sobre h2{
+    font-size: 48px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #6f5fc7;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 22px 0;
+    text-align: justify;
+}
