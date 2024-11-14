@@ -173,7 +173,7 @@ section.sobre .flex{
 
 .sobre .txt-sobre h2{
     font-size: 48px;
-    line-height: 40px;
+    line-height: 50px;
     margin-bottom: 25px;
 }
 
@@ -185,4 +185,16 @@ section.sobre .flex{
 .sobre .txt-sobre p{
     margin: 22px 0;
     text-align: justify;
+}
+
+/* Botão social midia */
+.sobre .txt-sobre .btn-midia button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #7d8dbe;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 8px;
 }
