@@ -205,8 +205,8 @@ section.sobre .flex{
 /* Projeto Estilo */
 
 section.projetos{
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #2a2f3c;
+    padding: 84px 4%;
+    /*box-shadow: 0 0 5px 5px #252731;*/
 }
 
 section.projetos .flex{
