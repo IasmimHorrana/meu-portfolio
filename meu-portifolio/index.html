@@ -29,15 +29,15 @@
 
         <nav class="Menu-Desktop">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Formação</a></li>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Portfólio</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#portifolio">Portfólio</a></li>
             </ul>
         </nav>
 
         <div class="btn-contato">
-            <a href="#">
+            <a href="#formulario">
                 <button>Contato</button>
             </a>
         </div>
@@ -45,6 +45,8 @@
   </header>
   
   <main>
+
+    <section id="inicio" class="topo-site"> <!-- Link de referencia-->
     <section class="topo-site">
         <div class="interface">
             <div class="flex">
@@ -58,7 +60,9 @@
             </div> <!--Fim: classe Flex-->
         </div> <!--Fim: interface-->
     </section> <!-- Fim: Topo so Site-->
+    </section> <!-- Fim do Link de referencia-->
 
+    <section id="formacao" class="formacao"> <!-- Link de referencia-->
     <section class="formacao">
         <div class="interface">
             <h2 class="title">Minha <span>Formação.</span></h2>
@@ -84,7 +88,9 @@
             </div> <!-- Flex-->
         </div> <!-- Interface-->
     </section> <!-- Fim: Formação-->
+    </section> <!-- Fim do Link de referencia-->
 
+    <section id="sobre" class="sobre"> <!-- Link de referencia-->
     <section class="sobre">
         <div class="interface">
             <div class="flex">
@@ -104,7 +110,9 @@
             </div>
         </div> <!-- Interface-->
     </section> <!-- Fim: Sobre-->
+    </section> <!-- Fim do Link de referencia-->
 
+    <section id="portifolio" class="projetos">  <!-- Link de referencia-->
     <section class="projetos">
         <div class="interface">
             <h2 class="title">MEUS <span>PROJETOS.</span></h2>
@@ -121,42 +129,61 @@
             </div> <!--Flex-->
         </div> <!--interface-->
     </section> <!-- Fim: Projetos-->
+    </section> <!-- Fim do Link de referencia-->
 
-    <section class="formulario">
+    <section id="formulario" class="formulario">
         <div class="interface">
             <h2 class="title">ENTRE EM <span>CONTATO.</span></h2>
-
+    
             <form action="">
                 <input type="text" name="" id="" placeholder="Seu nome" required>
                 <input type="text" name="" id="" placeholder="Seu e-mail" required>
                 <input type="text" name="" id="" placeholder="Seu Celular">
                 <textarea name="" id="" placeholder="Digite sua mensagem" required></textarea>
                 <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-
             </form>
-        </div> <!-- Interface-->
-    </section> <!-- Fim: formulario contato-->
+        </div> <!-- Interface -->
+    </section>
+    
 
   </main>
 
   <footer>
     <div class="interface">
         <div class="linha-footer">
-            <div class="logo">
-                <img src="assets/images/Icarus.jpg" width="90" height="80"alt="">
+            <div class="flex">
+                <div class="logo">
+                    <img src="assets/images/Icarus.jpg" width="90" height="80"alt="">
+                </div>
+                <div class="linha-footer">
+                    <div class="btn-midia">
+                        <a href="https://www.instagram.com/horrana.kazekage/"><button><i class="fa-brands fa-instagram"></i></button></a>
+                        <a href="https://github.com/IasmimHorrana"><button><i class="fa-brands fa-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/iasmim-horrana/"><button><i class="fa-brands fa-linkedin"></i></button></a>
+                    </div> <!-- Botão midia -->
             </div>
-            <div class="linha-footer">
-                <div class="btn-midia">
-                    <a href="https://www.instagram.com/horrana.kazekage/"><button><i class="fa-brands fa-instagram"></i></button></a>
-                    <a href="https://github.com/IasmimHorrana"><button><i class="fa-brands fa-github"></i></button></a>
-                    <a href="https://www.linkedin.com/in/iasmim-horrana/"><button><i class="fa-brands fa-linkedin"></i></button></a>
-                </div> <!-- Botão midia -->
         </div> <!-- Fim: Linha footer -->
-        <div class="linha-footer">
+        <div class="linha-footer borda">
             <p><i class="fa-solid fa-envelope"></i> <a href="mailto:contato@iasmimhorrana.com.br">contato@iasmimhorrana.com.br</a></p>
         </div> <!-- Fim: Linha footer -->
     </div> <!-- Fim: Interface -->
   </footer> <!-- Fim: Footer-->
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            const offset = 120; // Altura do header fixo
+            const topPosition = target.offsetTop - offset;
+
+            window.scrollTo({
+                top: topPosition,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 
 </body>
 </html>

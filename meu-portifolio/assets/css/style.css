@@ -36,9 +36,17 @@ button:hover, form .btn-enviar input:hover{
 }
 
 /* Estilo do Header */
-header{
-    padding: 40px 4%;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black; 
+    z-index: 1000; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 15px 4%; 
 }
+
 
 header > .interface{
     display: flex;
@@ -93,6 +101,7 @@ section.topo-site .flex{
     color: #fff;
     font-size: 38px;
     line-height: 38px;
+    padding-top: 100px;
 }
 
 .topo-site .txt-top h1 span{
@@ -112,7 +121,7 @@ section.topo-site .flex{
 
 @keyframes img-flutuante{
     0% {
-        top: 0;
+        top: 80px;
     }
 
     100%{
@@ -189,7 +198,7 @@ section.sobre .flex{
 }
 
 /* Botão social midia */
-.sobre .txt-sobre .btn-midia button{
+.btn-midia button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -303,3 +312,31 @@ form .btn-enviar input{
     transition: .2s;
 }
 
+/* Estilo Foonter */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .linha-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #7d8dbe;
+}
+
+footer .linha-footer p i{
+    color: #8e82cd;
+    font-size: 24px;
+}
+
+footer .linha-footer p a{
+    color: #fff;
+
+}
