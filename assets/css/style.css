@@ -1,168 +1,172 @@
 /* Estilo Geral do Site */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remove a margem de todos os elementos */
+    padding: 0; /* Remove o preenchimento de todos os elementos */
+    box-sizing: border-box; /* Faz com que as bordas e o padding sejam contados no tamanho do elemento */
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão para o site */
 }
 
 body{
-    background-color: black;
-    height: 100vh;
+    background-color: black; 
+    height: 100vh; /* Faz a altura do body ocupar toda a altura da tela */
 }
 
 .interface{
-    max-width: 1280px;
-    margin: 0 auto;
+    max-width: 1280px; /* Define a largura máxima da interface */
+    margin: 0 auto; /* Centraliza a interface na tela */
 }
 
 .flex{
-    display: flex;
+    display: flex; /* Aplica o modelo de layout flexível aos elementos dentro dessa classe */
 }
 
 h2.title{
-    color: #fff;
-    font-size: 38px;
-    text-align: center;
+    color: #fff; 
+    font-size: 38px; 
+    text-align: center; /* Alinha o texto ao centro */
 }
 
 h2.title span{
-    color: #6f5fc7;
+    color: #6f5fc7; 
 }
 
 button:hover, form .btn-enviar input:hover{
-    box-shadow: 0px 0px 8px #6f5fc7;
-    transform: scale(1.05);
+    box-shadow: 0px 0px 8px #6f5fc7; /* Adiciona uma sombra quando o botão é hover */
+    transform: scale(1.05); /* Aumenta o tamanho do botão quando é hover */
 }
 
 /* Estilo do Header */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: fixed; /* Faz o header ficar fixo no topo da página */
+    top: 0; 
+    left: 0; 
+    width: 100%; /* Faz o header ocupar toda a largura da tela */
     background-color: black; 
-    z-index: 1000; 
+    z-index: 1000; /* Garante que o header fique sobre outros elementos da página */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-    padding: 15px 4%; 
+    padding: 15px 4%; /* Define o preenchimento interno do header */
 }
 
 header > .interface{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* Usa o layout flexível para os elementos */
+    align-items: center; /* Alinha os itens no centro */
+    justify-content: space-between; /* Distribui os itens com espaço igual entre eles */
 }
 
 header a{
-    color: #C8C4DF;
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
+    color: #C8C4DF; 
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: inline-block; /* Faz os links se comportarem como blocos */
+    transition: .2s; /* Adiciona uma transição suave */
 }
 
 header a:hover{
-    color: #fff;
-    transform: scale(1.05);
+    color: #fff; 
+    transform: scale(1.05); /* Aumenta o tamanho do link quando o mouse passa sobre ele */
 }
 
 header nav ul{
-    list-style-type: none;
+    list-style-type: none; /* Remove os marcadores de lista da lista */
 }
 
 header nav ul li{
-    display: inline-block;
-    padding: 0 40px;
+    display: inline-block; /* Exibe os itens da lista em linha */
+    padding: 0 40px; /* Adiciona um preenchimento horizontal entre os itens */
 }
 
 header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #8e82cd;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
+    padding: 10px 40px; /* Define o preenchimento interno do botão */
+    font-size: 18px; 
+    font-weight: 600; 
+    background-color: #8e82cd; 
+    border: 0; /* Remove a borda */
+    border-radius: 30px; /* Torna as bordas do botão arredondadas */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
 }
+
 
 /* Estilo do Topo */
 section.topo-site{
-    padding: 40px 4%;
+    padding: 40px 4%; /* Adiciona um preenchimento */
 }
 
 section.topo-site .flex{
-    align-items: center;
+    align-items: center; /* Alinha os itens no centro */
     justify-content: center;
-    gap: 90px;
+    gap: 90px; /* Adiciona um espaço entre os itens dentro do container */
 }
 
 .topo-site h1{
-    color: #fff;
-    font-size: 38px;
-    line-height: 38px;
-    padding-top: 100px;
+    color: #fff; 
+    font-size: 38px; 
+    line-height: 38px; 
+    padding-top: 100px; /* Adiciona um preenchimento no topo, afastando o título do início */
 }
 
 .topo-site .txt-top h1 span{
-    color: #6f5fc7;
-    font-size: 50px;
+    color: #6f5fc7; 
+    font-size: 50px; 
 }
 
 .topo-site .txt-top p{
-    color: #fff;
-    margin: 40px 0;
+    color: #fff; 
+    margin: 40px 0; /* Adiciona uma margem no parágrafo */
 }
 
 .topo-site .img-top img{
-    position: relative;
-    animation: img-flutuante 2s ease-in-out infinite alternate;
+    position: relative; /* Imagem posicionada de forma relativa dentro do container */
+    animation: img-flutuante 2s ease-in-out infinite alternate; /* Aplica uma animação que faz a imagem "flutuar" */
 }
 
+/* animação */
 @keyframes img-flutuante{
     0% {
-        top: 80px;
+        top: 80px; 
     }
 
     100%{
-        top: 30px;
+        top: 30px; 
     }
 }
 
+
 /* Formação Estilo */
 section.formacao{
-    padding: 40px 4%;
+    padding: 40px 4%; /* Adiciona  preenchimento no topo e na parte inferior */
 }
 
 section.formacao .flex{
-    display: flex;
-    justify-content: center;   /* Centraliza as caixas horizontal */
-    align-items: center;       /* Centraliza as caixas verticalmente*/
-    gap: 60px;                 /* Espaço entre as caixas */
-    flex-wrap: wrap;           /* Faz as caixas se ajustarem em telas menores */
-    text-align: center;        /* Centraliza o conteúdo dentro das boxes */
+    display: flex; /* Usa o modelo de layout flexível para organizar */
+    justify-content: center;   /* Centraliza as caixas */
+    align-items: center;       /* Centraliza as caixas */
+    gap: 60px;                 /* Define um espaço entre as caixas */
+    flex-wrap: wrap;           /* Permite que as caixas se ajustem */
+    text-align: center;        /* Centraliza o conteúdo dentro das caixas */
 }
 
 .formacao .formacao-box{
-    color: #fff;
+    color: #fff; 
     padding: 40px;  
-    margin-top: 35px;
-    border-radius: 20px;
-    transition: .2s;
+    margin-top: 35px; /* Adiciona uma margem no topo de cada caixa */
+    border-radius: 20px; /* Torna as bordas da caixa arredondadas */
+    transition: .2s; /* Adiciona uma transição suave */
 }
 
 .formacao .formacao-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #7d8dbe;
+    transform: scale(1.05); /* Aumenta tamanho da caixa quando o mouse passa sobre ela */
+    box-shadow: 0 0 10px #7d8dbe; 
 }
 
 .formacao .formacao-box i{
-    font-size: 60px;
+    font-size: 60px; 
     color: #6f5fc7;
 }
 
 .formacao .formacao-box h3{
-    font-size: 30px;
-    margin: 20px 0;
+    font-size: 30px; 
+    margin: 20px 0; 
 }
+
 
 /* Sobre Estilo */
 section.sobre{
@@ -170,29 +174,30 @@ section.sobre{
 }
 
 section.sobre .flex{
-    align-items: center;
-    gap: 60px;
+    align-items: center; /* Alinha os itens no centro */
+    gap: 60px; /* Adiciona um espaço dentro do container */
 }
 
 .sobre .txt-sobre{
-    color: #fff;
+    color: #fff; 
 }
 
 .sobre .txt-sobre h2{
-    font-size: 48px;
-    line-height: 50px;
-    margin-bottom: 25px;
+    font-size: 48px; 
+    line-height: 50px; /* Define a altura da linha para o título */
+    margin-bottom: 25px; /* Adiciona uma margem */
 }
 
 .sobre .txt-sobre h2 span{
-    color: #6f5fc7;
-    display: block;
+    color: #6f5fc7; 
+    display: block; /* Faz o <span> se comportar como um bloco, ocupando toda a linha */
 }
 
 .sobre .txt-sobre p{
-    margin: 22px 0;
-    text-align: justify;
+    margin: 22px 0; 
+    text-align: justify; /* Alinha o texto do parágrafo de forma justificada */
 }
+
 
 /* Botão social midia */
 .btn-midia button{
@@ -332,5 +337,4 @@ footer .linha-footer p i{
 
 footer .linha-footer p a{
     color: #fff;
-
 }
