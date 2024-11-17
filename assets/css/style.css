@@ -47,7 +47,6 @@ header {
     padding: 15px 4%; 
 }
 
-
 header > .interface{
     display: flex;
     align-items: center;
@@ -60,6 +59,7 @@ header a{
     display: inline-block;
     transition: .2s;
 }
+
 header a:hover{
     color: #fff;
     transform: scale(1.05);
@@ -82,11 +82,9 @@ header .btn-contato button{
     border: 0;
     border-radius: 30px;
     cursor: pointer;
-
 }
 
 /* Estilo do Topo */
-
 section.topo-site{
     padding: 40px 4%;
 }
@@ -167,7 +165,6 @@ section.formacao .flex{
 }
 
 /* Sobre Estilo */
-
 section.sobre{
     padding: 85px 4%;
 }
@@ -212,7 +209,6 @@ section.sobre .flex{
 }
 
 /* Projeto Estilo */
-
 section.projetos{
     padding: 84px 4%;
     /*box-shadow: 0 0 5px 5px #252731;*/
@@ -256,7 +252,6 @@ section.projetos .flex{
 }
 
 /* Formulario Estilo */
-
 section.formulario{
     padding: 80px 4%;
 }
@@ -313,7 +308,6 @@ form .btn-enviar input{
 }
 
 /* Estilo Foonter */
-
 footer{
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
